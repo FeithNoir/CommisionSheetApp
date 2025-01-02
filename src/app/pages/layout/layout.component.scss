@@ -1,0 +1,55 @@
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  overflow: hidden;
+}
+
+.navbar {
+  top: 0;
+  position: sticky;
+  grid-area: navbar;
+  z-index: 100;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  z-index: 100;
+}
+
+/* Media Query: Tablets y Laptops (pantallas medianas) */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "navbar navbar"
+      "main main"
+      "footer footer";
+  }
+
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "navbar navbar"
+      "main main"
+      "footer footer";
+  }
+}
