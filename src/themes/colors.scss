@@ -56,6 +56,17 @@
   }
 }
 
+.bg-dark-primary {
+  background: $dark-primary;
+  color: $white;
+}
+
+.bg-dark-primary-hover {
+  &:hover {
+    background: $dark-primary;
+  }
+}
+
 .bg-secondary {
   background: $secondary;
   color: $white;
