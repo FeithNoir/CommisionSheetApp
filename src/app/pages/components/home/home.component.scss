@@ -1,4 +1,4 @@
-@import '../../../../themes/variables.scss';
+@import "../../../../themes/variables.scss";
 
 .home {
   padding: 2rem;
@@ -7,18 +7,21 @@
 
   &-title {
     font-size: 5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    border-bottom: 0.5rem solid $tomato;
   }
 
   &-content {
     min-height: 43rem;
+    width: 80%;
     justify-content: space-between;
     align-items: start;
 
     &_heading {
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 6rem;
+      line-height: 1.2;
+      font-family: "Montserrat", serif;
+      font-weight: 900;
+      font-style: italic;
     }
 
     &_description {

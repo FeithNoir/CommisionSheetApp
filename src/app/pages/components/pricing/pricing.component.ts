@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PricingInfo } from '../../../core/interfaces/pricingInfo.interface';
 import { SharedModule } from '../../../shared/shared.module';
 import { Card } from '../../../core/interfaces/card.interface';
 

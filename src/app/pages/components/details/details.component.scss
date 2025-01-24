@@ -1,19 +1,30 @@
-@import '../../../../themes/variables.scss';
+@import "../../../../themes/variables.scss";
 
 .details {
+  padding: 2rem;
+  border-radius: 0.5rem;
+
   .details-container {
+    align-items: start;
+
     .specifications {
-      padding: 1.5rem;
+      height: 100%;
+      padding: 1rem;
       border-radius: 0.5rem;
+      justify-content: space-between;
+      background: $tomato;
+      outline: 0.5rem solid $vermilion;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
       .specifications-title {
-        font-size: 2.4rem;
-        margin-bottom: 1rem;
+        color: $white;
+        font-size: 3rem;
+        position: relative;
       }
 
       .specifications-list {
         li {
+          color: $white;
           padding: 0.5rem 0;
         }
       }

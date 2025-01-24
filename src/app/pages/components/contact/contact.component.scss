@@ -1,21 +1,23 @@
-@import '../../../../themes/variables.scss';
+@import "../../../../themes/variables.scss";
 
-// Estilos para la sección de contacto
 .contact {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   .contact-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
 
   .contact-body {
-    font-size: 1.6rem;
+    p {
+      font-size: 2.4rem;
+    }
 
     .contact-body_list {
       li {
+        font-size: 1.6rem;
         padding: 0.5rem 0;
       }
     }
