@@ -1,27 +1,81 @@
-# CommissionSheet
+# Feith Noir - Commission Sheet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+<!-- ![Feith Noir Logo](https://via.placeholder.com/150) Puedes agregar un logo aquí si lo tienes -->
 
-## Development server
+Bienvenido al repositorio oficial de **Commission Sheet**, una página web diseñada para mostrar información detallada sobre las comisiones de arte digital, en este caso en particular, ofrecidas por **Feith Noir**. Este proyecto está desarrollado en **Angular** y utiliza una paleta de colores moderna y un diseño responsive.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Diseño Moderno**: Utiliza una paleta de colores vibrantes y un diseño **Bento Grid** para organizar las secciones de manera atractiva.
+- **Responsive**: El diseño se adapta a diferentes dispositivos (móviles, tablets y desktop).
+- **Documentación Clara**: Este `README.md` proporciona toda la información necesaria para entender y utilizar el proyecto.
+- **Créditos**: Desarrollado por **Feith Noir** con amor y dedicación.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tecnologías Utilizadas
 
-## Running unit tests
+- **Angular**: Framework principal para el desarrollo de la aplicación.
+- **SCSS**: Para estilos avanzados y organización del código CSS.
+- **HTML5**: Estructura semántica del contenido.
+- **Google Fonts**: Fuentes modernas como **Nunito** y **Roboto Slab**.
+- **GitHub**: Para el control de versiones y alojamiento del proyecto.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🖥️ Cómo Ejecutar el Proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
-## Further help
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/FeithNoir/CommisionSheetApp
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. **Instala las dependencias**:
+   ```bash
+    cd CommisionSheetApp
+    npm install
+
+3. **Ejecuta el servidor de desarrollo:**:
+   ```bash
+    ng serve
+
+4. **Abre el proyecto en tu navegador:**:
+   ```bash
+    Visita http://localhost:4200 para ver la aplicación en acción.
+
+## 📝 Documentación Adicional
+Diseño Responsive
+
+El proyecto utiliza un enfoque mobile-first y se adapta a diferentes tamaños de pantalla mediante media queries. Aquí están los breakpoints principales:
+
+    Móviles: Menos de 768px.
+
+    Tablets: 768px - 1024px.
+
+    Desktop: Más de 1024px.
+
+## 🖌️ Estilos
+
+Los estilos están organizados en archivos SCSS para una mejor mantenibilidad:
+
+    base.scss: Estilos generales y reset.
+
+    variables.scss: Variables de colores, fuentes y tamaños.
+
+    sections.scss: Estilos específicos para cada sección de la página.
+
+## 🙏 Créditos
+
+Este proyecto fue desarrollado por Feith Noir. Puedes encontrar más información sobre el autor y sus proyectos en su perfil de GitHub:
+
+👉 Feith Noir en GitHub
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo, modificarlo y distribuirlo según tus necesidades.
+🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes alguna idea o sugerencia, no dudes en abrir un issue o enviar un pull request. ¡Gracias por visitar este repositorio!
