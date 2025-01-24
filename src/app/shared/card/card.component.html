@@ -1,0 +1,15 @@
+<div class="card column g-1 wd-100">
+  <h3 class="card-title color-vermilion"> {{ cardInfo().title }} </h3>
+
+  @if (cardInfo().img !== undefined) {
+    <img [src]="cardInfo().img" alt="card_image" class="card-image">
+  }
+
+  <p class="card-description">
+    {{ cardInfo().description }}
+  </p>
+
+  <a class="btn btn-primary">
+    {{ cardInfo().btnText }}
+  </a>
+</div>

@@ -1,19 +1,13 @@
-<main class="pricing  column g-1">
-  <h1 class="pricing-title">💰 Pricing</h1>
+<main class="pricing bg-vermilion column g-1">
+  <h1 class="pricing-title color-white"> 💰 Pricing 💰 </h1>
 
-  <ul class="pricing-list">
-    <li class="pricing-list_item">
-      $15: A simple illustration with up to 2 characters. Additional characters:
-      +$5 each (e.g., 3 characters = $20, 4 characters = $25).
-    </li>
-
-    <li class="pricing-list_item">
-      $25: A set of 10 image variants. Additional variants: +$2 each.
-    </li>
+  <ul class="pricing-list wd-100 row g-2">
+    @for (card of cardInfo; track $index) {
+      <shared-card [cardInfo]="card" class="wd-50" />
+    }
   </ul>
 
-  <p class="pricing-note">
-    <span class="accent">Note:</span> The pricing is standard regardless of the
-    type of shot (close-up, bust, or full-body).
+  <p class="pricing-note color-white">
+    <span class="accent">Note:</span> The pricing is standard regardless of the type of shot (close-up, bust, or full-body).
   </p>
 </main>

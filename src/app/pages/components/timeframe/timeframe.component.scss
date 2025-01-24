@@ -1,0 +1,23 @@
+@import '../../../../themes/variables.scss';
+
+// Estilos para la sección de plazos
+.timeframe {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .timeframe-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeframe-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  .timeframe {
+    padding: 3rem;
+  }
+}

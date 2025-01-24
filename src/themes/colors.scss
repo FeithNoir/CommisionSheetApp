@@ -1,91 +1,53 @@
 @import './variables.scss';
 
-/*** Colors ***/
+// Mapa de colores
+$colors: (
+  "white": $white,
+  "primary": $tomato,
+  "orange-crayola": $orange-crayola,
+  "cinnabar": $cinnabar,
+  "vermilion": $vermilion,
+  "platinum": $platinum,
+  "gray": $gray,
+  "light-gray": $light-gray,
+  "success": $success,
+  "accent": $accent,
+  "danger": $danger,
+  "dark-danger": $dark-danger,
+  "warning": $warning,
+  "black": $black,
+  "text": $text
+);
 
-.color-white {
-  color: $white;
-}
+// Generar clases de colores
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: $color;
+  }
 
-.color-primary {
-  color: $primary;
-}
+  .bg-#{$name} {
+    background: $color;
+  }
 
-.color-secondary {
-  color: $secondary;
-}
-
-.btn-primary,
-.btn-secondary {
-  &:disabled {
-    background: $gray;
-    pointer-events: none;
+  .bg-#{$name}-hover:hover {
+    background: $color;
   }
 }
 
-.btn-primary {
-  background: $primary;
-  color: $white;
+/*** Botones ***/
 
-  &:hover {
-    background: $dark-primary;
+@each $name, $color in $colors {
+  .btn-#{$name} {
+    background: $color;
+    color: $white;
+
+    &:hover {
+      background: darken($color, 10%);
+    }
+
+    &:disabled {
+      background: $gray;
+      pointer-events: none;
+    }
   }
-
-  &:disabled {
-    background: $gray;
-    pointer-events: none;
-  }
-}
-
-.btn-secondary {
-  background: $secondary;
-  color: $white;
-
-  &:hover {
-    background: $dark-secondary;
-  }
-}
-
-.bg-primary {
-  background: $primary;
-  color: $white;
-}
-
-.bg-primary-hover {
-  &:hover {
-    background: $dark-primary;
-  }
-}
-
-.bg-dark-primary {
-  background: $dark-primary;
-  color: $white;
-}
-
-.bg-dark-primary-hover {
-  &:hover {
-    background: $dark-primary;
-  }
-}
-
-.bg-secondary {
-  background: $secondary;
-  color: $white;
-}
-
-.bg-secondary-hover {
-  &:hover {
-    background: $dark-secondary;
-  }
-}
-
-.bg-white {
-  background: $white;
-}
-
-.bg-black {
-  background: $black;
-}
-
-.bg-gray {
-  background: $gray;
 }

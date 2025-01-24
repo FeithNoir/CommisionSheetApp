@@ -1,5 +1,4 @@
 // Media Queries Sizes
-
 $smartphone: 390px;
 $phone: 480px;
 $tablet: 768px;
@@ -7,26 +6,31 @@ $desktop: 1024px;
 $widerscreen: 1200px;
 
 // Colors - Principal
+// Fondo oscuro
+$background-dark: #1a1a1a;
+$text-light: #f5f5f5;
+$text-muted: #bdbdbd;
+$text: #333;
 
-$primary: #3E5879;
-$dark-primary: #213555;
-$secondary: #79D7BE;
-$dark-secondary: #4DA1A9;
-$terciary: #D8C4B6;
-$dark-terciary: #D8C4B6;
-$white: #fff;
-$black: #333;
-$gray: #F5EFE7;
-$ligth-gray: #d4d4d4;
+// Nueva paleta de colores
+$tomato: #f85a3e;
+$orange-crayola: #ff7733;
+$cinnabar: #e15634;
+$vermilion: #e63b2e;
+$platinum: #e1e6e1;
+$white: #ffffff;
+$black: #000000;
 
-// Sistem
+// Colores adicionales
+$gray: #666666;
+$light-gray: #999999;
 
-$success: #1B5E20;
-$accent: #aacc00;
-$danger: #EB445A;
-$dark-danger: #ba181b;
-$warning: #ffca22;
+// System
+$success: #00ff88; // Verde neón
+$accent: #ffdd57; // Amarillo neón
+$danger: #ff3860; // Rojo neón
+$dark-danger: #ff1a4a; // Rojo neón más oscuro
+$warning: #ff9f43; // Naranja neón
 
 // Spacing
-
 $separacion: 5rem;

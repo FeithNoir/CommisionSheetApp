@@ -1,0 +1,22 @@
+@import '../../../../themes/variables.scss';
+
+.pricing {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .pricing-title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-note {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  .pricing {
+    padding: 3rem;
+  }
+}

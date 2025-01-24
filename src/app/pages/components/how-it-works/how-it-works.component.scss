@@ -1,0 +1,29 @@
+@import '../../../../themes/variables.scss';
+
+// Estilos para la sección de cómo funciona
+.howworks {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .howworks-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .howworks-description {
+    font-size: 1.6rem;
+  }
+
+  .howworks-list {
+    li {
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .howworks {
+    padding: 3rem;
+  }
+}

@@ -1,7 +1,40 @@
-.home {
-  align-items: start;
+@import '../../../../themes/variables.scss';
 
-  &-description {
-    font-size: 2rem;
+.home {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+    min-height: 43rem;
+    justify-content: space-between;
+    align-items: start;
+
+    &_heading {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    &_description {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-pic {
+    max-width: 70%;
+    border-radius: 0.5rem;
+  }
+}
+
+// Media queries para desktop
+@media (min-width: $desktop) {
+  .home {
+    padding: 3rem;
   }
 }

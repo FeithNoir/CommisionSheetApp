@@ -1,0 +1,17 @@
+.card {
+  padding: 1.5rem 0;
+  &-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &-image, &-description {
+    width: 100%;
+  }
+
+  &-description {
+    font-size: 1.8rem;
+    padding: 0 1.5rem;
+  }
+}

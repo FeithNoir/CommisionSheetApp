@@ -1,33 +1,22 @@
 <section class="details column g-1">
   <div class="details-container row g-1">
     <div class="specifications wd-50">
-      <h1 class="specifications-title">🖌️ What I Do</h1>
+      <h1 class="specifications-title"> {{ whatIdo.title }} </h1>
 
       <ul class="specifications-list">
-        <li class="specifications-list_item">✅ Original characters (OCs)</li>
-        <li class="specifications-list_item">✅ Fanart</li>
-        <li class="specifications-list_item">✅ NSFW (explicit content, but not all so ask me first)</li>
-        <li class="specifications-list_item">✅ Yuri/Yaoi</li>
-        <li class="specifications-list_item">✅ Futanari</li>
-        <li class="specifications-list_item">✅ Shemales</li>
-        <li class="specifications-list_item">✅ Crossdressing</li>
-        <li class="specifications-list_item">✅ Portraits and pin-ups</li>
-        <li class="specifications-list_item">✅ Variants (e.g., different expressions, outfits, or backgrounds)</li>
+        @for (item of whatIdo.items; track $index) {
+          <li class="specifications-list_item"> {{ item }} </li>
+        }
       </ul>
     </div>
 
     <div class="specifications wd-50">
-      <h1 class="specifications-title">❌ What I Don’t Do</h1>
+      <h1 class="specifications-title"> {{ whatIdont.title }} </h1>
 
       <ul class="specifications-list">
-        <li class="specifications-list_item">🚫 Heavy gore or violence</li>
-        <li class="specifications-list_item">🚫 Mechas or overly complex machinery</li>
-        <li class="specifications-list_item">🚫 Highly detailed backgrounds</li>
-        <li class="specifications-list_item">🚫 Clothes Designs</li>
-        <li class="specifications-list_item">🚫 Chubby</li>
-        <li class="specifications-list_item">🚫 Furry</li>
-        <li class="specifications-list_item">🚫 Scat/other fluids</li>
-        <li class="specifications-list_item">🚫 Controversial stuff</li>
+        @for (item of whatIdont.items; track $index) {
+          <li class="specifications-list_item"> {{ item }} </li>
+        }
       </ul>
     </div>
   </div>

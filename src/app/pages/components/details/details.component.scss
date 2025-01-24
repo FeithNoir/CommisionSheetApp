@@ -1,0 +1,43 @@
+@import '../../../../themes/variables.scss';
+
+.details {
+  .details-container {
+    .specifications {
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      .specifications-title {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .specifications-list {
+        li {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .details-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .specifications {
+    width: 48%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .details-container {
+    gap: 3rem;
+  }
+
+  .specifications {
+    width: 45%; // Ajustamos el ancho para desktop
+  }
+}

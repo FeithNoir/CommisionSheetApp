@@ -1,31 +1,21 @@
 <section class="howworks column g-1">
-  <h1 class="howworks-title">📋 How It Works</h1>
+  <h1 class="howworks-title"> {{ howWorksInfo.title }} </h1>
 
   <p class="howworks-description">
-    I follow a three-step process for every commission:
+    {{ howWorksInfo.description }}
   </p>
 
   <ol class="howworks-list">
-    <li class="howworks-list_item">
-      Sketch: I’ll send you the initial draft for approval.
-    </li>
-    <li class="howworks-list_item">
-      Base Colors: A colored version without final details.
-    </li>
-    <li class="howworks-list_item">
-      Final Version: The completed, polished artwork.
-    </li>
+    @for (item of howWorksInfo.process; track $index) {
+      <li class="howworks-list_item"> {{ item }} </li>
+    }
   </ol>
 
   <p class="howworks-description">
-    You can request up to three changes during the process (e.g., in the sketch
-    and base color stages). To make the most of these, please provide all
-    necessary references and details upfront.
+    {{ howWorksInfo.note }}
   </p>
 
   <p class="howworks-description">
-    Important: Major changes (e.g., adding a new character) won’t be accepted
-    during the final stage, so be sure everything is approved in the earlier
-    steps.
+    {{ howWorksInfo.important }}
   </p>
 </section>

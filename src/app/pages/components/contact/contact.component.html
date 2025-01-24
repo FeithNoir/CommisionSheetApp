@@ -1,13 +1,13 @@
 <section class="contact  column g-1">
-  <h1 class="contact-title">💬 Ready to Order?</h1>
+  <h1 class="contact-title"> {{ contantInfo.title }} </h1>
 
   <div class="contact-body">
-    <p>Feel free to send me a message with the following details:</p>
+    <p>{{ contantInfo.description }}</p>
 
     <ul class="contact-body_list">
-      <li>Type of commission (simple illustration or variant set)</li>
-      <li>Number of characters/variants</li>
-      <li>Detailed description and references (the more, the better!)</li>
+      @for (item of contantInfo.requirements; track $index) {
+        <li> {{ item }} </li>
+      }
     </ul>
   </div>
 </section>
