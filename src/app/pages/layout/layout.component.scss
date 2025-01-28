@@ -19,50 +19,11 @@
 
 .main {
   grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "home"
-    "pricing"
-    "details"
-    "howItWorks"
-    "timeframe"
-    "contact";
-  gap: 1rem;
-  padding: 1rem;
 }
 
 .footer {
   grid-area: footer;
   z-index: 100;
-}
-
-/* Asignación de áreas a cada sección */
-pages-home {
-  grid-area: home;
-}
-
-pages-pricing {
-  grid-area: pricing;
-}
-
-pages-details {
-  grid-area: details;
-  height: 100%;
-}
-
-pages-howItWorks {
-  grid-area: howItWorks;
-  height: 100%;
-}
-
-pages-timeframe {
-  grid-area: timeframe;
-}
-
-pages-contact {
-  grid-area: contact;
 }
 
 /* Media Query: Tablets y Laptops (pantallas medianas) */
@@ -75,11 +36,6 @@ pages-contact {
       "main main"
       "footer footer";
   }
-
-  .main {
-    padding: 2rem;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -90,15 +46,5 @@ pages-contact {
       "navbar navbar"
       "main main"
       "footer footer";
-  }
-
-  .main {
-    grid-template-columns: repeat(2, 1fr); // Dos columnas de igual tamaño
-    grid-template-rows: auto auto auto auto; // Cuatro filas
-    grid-template-areas:
-      "home home"
-      "pricing details"
-      "howItWorks timeframe"
-      "howItWorks contact";
   }
 }

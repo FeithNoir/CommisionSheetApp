@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'pages-home',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export default class HomeComponent {
-
+  public imgSrc = input<string>('profile.png');
 }

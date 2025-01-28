@@ -24,6 +24,10 @@ h1, h2, h3, p, a, ul, img {
   margin: 0;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 p {
   font-size: 1.6rem;
   color: $text;

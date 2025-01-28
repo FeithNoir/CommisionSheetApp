@@ -1,23 +1,21 @@
-<section class="details bg-text column g-1">
-  <div class="details-container row g-1">
-    <div class="specifications column wd-50">
-      <h1 class="specifications-title"> {{ whatIdo.title }} </h1>
+<section class="details bg-text column">
+  <div class="specifications column g-1">
+    <h1 class="specifications-title"> {{ whatIdo.title }} </h1>
 
-      <ul class="specifications-list">
-        @for (item of whatIdo.items; track $index) {
-          <li class="specifications-list_item"> {{ item }} </li>
-        }
-      </ul>
-    </div>
+    <ul class="specifications-list">
+      @for (item of whatIdo.items; track $index) {
+        <li class="specifications-list_item"> {{ item }} </li>
+      }
+    </ul>
+  </div>
 
-    <div class="specifications column wd-50">
-      <h1 class="specifications-title"> {{ whatIdont.title }} </h1>
+  <div class="specifications column">
+    <h1 class="specifications-title"> {{ whatIdont.title }} </h1>
 
-      <ul class="specifications-list">
-        @for (item of whatIdont.items; track $index) {
-          <li class="specifications-list_item"> {{ item }} </li>
-        }
-      </ul>
-    </div>
+    <ul class="specifications-list">
+      @for (item of whatIdont.items; track $index) {
+        <li class="specifications-list_item"> {{ item }} </li>
+      }
+    </ul>
   </div>
 </section>

@@ -1,7 +1,7 @@
 <main class="pricing bg-vermilion column g-1">
   <h1 class="pricing-title color-white"> 💰 Pricing 💰 </h1>
 
-  <ul class="pricing-list wd-100 row g-2">
+  <ul class="pricing-list wd-100 row">
     @for (card of cardInfo; track $index) {
       <shared-card [cardInfo]="card" class="wd-50" />
     }

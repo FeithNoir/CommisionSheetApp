@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   exports: [
     CardComponent,

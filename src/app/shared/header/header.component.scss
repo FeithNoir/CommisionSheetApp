@@ -1,5 +1,34 @@
+@import '../../../themes/variables.scss';
+
 .header {
   padding: 1.5rem 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  justify-content: start;
+  justify-content: space-between;
+
+  &-title {
+    cursor: pointer;
+  }
+}
+
+.nav-list {
+  &_item {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background: $white;
+      color: $tomato;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -2,10 +2,21 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'main',
+    path: 'home',
     loadComponent: () => import('./pages/layout/layout.component'),
+    loadChildren: () => [
+      { path: 'main', loadComponent: () => import('./pages/main/main.component'), title: 'Main Page', },
+      { path: 'about', loadComponent: () => import('./pages/about-me/about-me.component'), title: 'About Me', },
+      { path: '', redirectTo: 'main', pathMatch: 'full' },
+      { path: '**', redirectTo: 'main' },
+    ],
     title: 'Commission Sheet',
   },
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
-  { path: '**', redirectTo: 'main' },
+  {
+    path: 'about',
+    loadComponent: () => import('./pages/about-me/about-me.component'),
+    title: 'About Me',
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home' },
 ];
