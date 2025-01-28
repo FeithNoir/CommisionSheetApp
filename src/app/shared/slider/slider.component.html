@@ -1,0 +1,14 @@
+<div class="slider column g-2 wd-100">
+  <h2 class="slider-title">See some of my work:</h2>
+  <div class="slider-content row">
+    <button class="prev btn btn-primary" [disabled]="this.currentIndex <= 0" (click)="plusSlides(-1)">&#10094;</button>
+    <img [src]="currentImage" />
+    <button class="next btn btn-primary" [disabled]="this.currentIndex >= this.displayImages().length - 1" (click)="plusSlides(1)">&#10095;</button>
+  </div>
+
+  <div class="slider-buttons row g-2 wd-100">
+    @for (image of displayImages(); track $index) {
+      <span class="dot btn" [ngClass]="currentIndex == $index ? 'active' : '' " (click)="currentSlide($index)"></span>
+    }
+  </div>
+</div>

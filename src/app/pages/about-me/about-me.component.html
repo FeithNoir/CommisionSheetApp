@@ -1,3 +1,7 @@
-<section class="home">
-  <pages-home [imgSrc]="imgSrc" />
+<section class="home bg-text">
+  <div class="home-wrapper column g-2">
+    <pages-home [isShowingButton]="false" [imgSrc]="imgSrc" />
+
+    <shared-slider [displayImages]="displayImages" />
+  </div>
 </section>

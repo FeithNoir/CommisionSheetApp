@@ -8,5 +8,6 @@ import { Component, input } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export default class HomeComponent {
+  public isShowingButton = input<boolean>(true);
   public imgSrc = input<string>('profile.png');
 }
