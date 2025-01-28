@@ -1,0 +1,14 @@
+@import '../../../themes/variables.scss';
+
+.contact {
+  padding: 2rem;
+}
+
+.social-links {
+  width: 80%;
+  padding: 2rem;
+
+  &_item {
+    font-size: 2rem;
+  }
+}

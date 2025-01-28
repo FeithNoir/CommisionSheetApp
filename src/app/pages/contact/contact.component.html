@@ -1,0 +1,9 @@
+<section class="contact column g-2">
+  <h1 class="contact-title">Follow me in my social media!</h1>
+
+  <ul class="social-links">
+    @for (item of socialMedia; track $index) {
+      <li class="social-links_item"> {{ item.name }} </li>
+    }
+  </ul>
+</section>
