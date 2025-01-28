@@ -1,0 +1,45 @@
+<div class="pricing">
+  <div class="tabs column wd-100">
+    <div class="tabs-header row wd-100">
+      @for (tab of tabs; track $index) {
+      <button
+        [class.active]="$index === activeTab"
+        (click)="selectTab($index)"
+        class="tabs-header_button btn"
+      >
+        {{ tab }}
+      </button>
+      }
+    </div>
+
+    <div class="tabs-content row g-1">
+      <img [src]="commission[activeTab].img" />
+
+      <div class="details column g-2 wd-100">
+        <h2 class="tabs-content_heading">{{ commission[activeTab].title }}</h2>
+
+        <p class="tabs-content_description">
+          {{ commission[activeTab].description }}
+        </p>
+
+        <span class="pill pill-text">
+          $ {{ commission[activeTab].price }}
+        </span>
+
+        <h3>Considerations</h3>
+
+        <ul class="considerations-list column">
+          @for (item of commission[activeTab].considerations; track $index) {
+          <div class="considerations-list_item row g-1 wd-100">
+            <span class="circle"></span>
+
+            <li class="considerations-list_item">
+              {{ item }}
+            </li>
+          </div>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

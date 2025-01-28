@@ -7,6 +7,7 @@ export const routes: Routes = [
     loadChildren: () => [
       { path: 'main', loadComponent: () => import('./pages/main/main.component'), title: 'Main Page', },
       { path: 'about', loadComponent: () => import('./pages/about-me/about-me.component'), title: 'About Me', },
+      { path: 'pricing', loadComponent: () => import('./pages/pricing/pricing.component'), title: 'Pricing', },
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       { path: '**', redirectTo: 'main' },
     ],

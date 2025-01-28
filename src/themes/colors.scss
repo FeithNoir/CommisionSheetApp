@@ -51,3 +51,13 @@ $colors: (
     }
   }
 }
+
+
+/*** Pildoras ***/
+
+@each $name, $color in $colors {
+  .pill-#{$name} {
+    background: $color;
+    color: $white;
+  }
+}
